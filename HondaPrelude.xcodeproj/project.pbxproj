@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7E148192357954500C131DF /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E148182357954500C131DF /* Debug.swift */; };
 		E7F998CC235699E800D69078 /* HondaPrelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F998C2235699E800D69078 /* HondaPrelude.framework */; };
 		E7F998D1235699E800D69078 /* HondaPreludeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F998D0235699E800D69078 /* HondaPreludeTests.swift */; };
 		E7F998D3235699E800D69078 /* HondaPrelude.h in Headers */ = {isa = PBXBuildFile; fileRef = E7F998C5235699E800D69078 /* HondaPrelude.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E7E148182357954500C131DF /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
 		E7F998C2235699E800D69078 /* HondaPrelude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HondaPrelude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F998C5235699E800D69078 /* HondaPrelude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HondaPrelude.h; sourceTree = "<group>"; };
 		E7F998C6235699E800D69078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				E7F998DE23569A3A00D69078 /* Apply.swift */,
 				E7F998DF23569A3A00D69078 /* Compose.swift */,
 				E7F998DD23569A3A00D69078 /* Curry.swift */,
+				E7E148182357954500C131DF /* Debug.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7F998E123569A3A00D69078 /* Apply.swift in Sources */,
+				E7E148192357954500C131DF /* Debug.swift in Sources */,
 				E7F998E223569A3A00D69078 /* Compose.swift in Sources */,
 				E7F998E023569A3A00D69078 /* Curry.swift in Sources */,
 			);
