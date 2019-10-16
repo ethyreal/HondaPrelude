@@ -10,6 +10,9 @@
 		E7F998CC235699E800D69078 /* HondaPrelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F998C2235699E800D69078 /* HondaPrelude.framework */; };
 		E7F998D1235699E800D69078 /* HondaPreludeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F998D0235699E800D69078 /* HondaPreludeTests.swift */; };
 		E7F998D3235699E800D69078 /* HondaPrelude.h in Headers */ = {isa = PBXBuildFile; fileRef = E7F998C5235699E800D69078 /* HondaPrelude.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7F998E023569A3A00D69078 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F998DD23569A3A00D69078 /* Curry.swift */; };
+		E7F998E123569A3A00D69078 /* Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F998DE23569A3A00D69078 /* Apply.swift */; };
+		E7F998E223569A3A00D69078 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F998DF23569A3A00D69078 /* Compose.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		E7F998CB235699E800D69078 /* HondaPreludeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HondaPreludeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F998D0235699E800D69078 /* HondaPreludeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HondaPreludeTests.swift; sourceTree = "<group>"; };
 		E7F998D2235699E800D69078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7F998DD23569A3A00D69078 /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
+		E7F998DE23569A3A00D69078 /* Apply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apply.swift; sourceTree = "<group>"; };
+		E7F998DF23569A3A00D69078 /* Compose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compose.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 		E7F998C4235699E800D69078 /* HondaPrelude */ = {
 			isa = PBXGroup;
 			children = (
+				E7F998DC235699F200D69078 /* Source */,
 				E7F998C5235699E800D69078 /* HondaPrelude.h */,
 				E7F998C6235699E800D69078 /* Info.plist */,
 			);
@@ -84,6 +91,16 @@
 				E7F998D2235699E800D69078 /* Info.plist */,
 			);
 			path = HondaPreludeTests;
+			sourceTree = "<group>";
+		};
+		E7F998DC235699F200D69078 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E7F998DE23569A3A00D69078 /* Apply.swift */,
+				E7F998DF23569A3A00D69078 /* Compose.swift */,
+				E7F998DD23569A3A00D69078 /* Curry.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +165,7 @@
 				TargetAttributes = {
 					E7F998C1235699E800D69078 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					E7F998CA235699E800D69078 = {
 						CreatedOnToolsVersion = 11.1;
@@ -195,6 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7F998E123569A3A00D69078 /* Apply.swift in Sources */,
+				E7F998E223569A3A00D69078 /* Compose.swift in Sources */,
+				E7F998E023569A3A00D69078 /* Curry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +361,7 @@
 		E7F998D7235699E800D69078 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +377,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ethyeal.HondaPrelude;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +386,7 @@
 		E7F998D8235699E800D69078 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +410,7 @@
 		E7F998DA235699E800D69078 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HondaPreludeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +428,7 @@
 		E7F998DB235699E800D69078 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HondaPreludeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
